@@ -13,13 +13,17 @@ public class GraphNode {
   }
   public void addRelation(GraphNode node){
     relations.add(node);
+    node.getRelations().add(this);
   }
   public void removeRelation(int value){
     for (GraphNode node: relations){
       if (node.getData() == value){
+        node.getRelations().remove(this);
         relations.remove(node);
+
       }
     }
+
   }
   public int getData(){
     return this.data;

@@ -36,6 +36,9 @@ public class Graph {
         node2.addRelation(node3);
         node1.addRelation(node3);
         graph.drawGraph();
+        node2.removeRelation(54);
+        System.out.println();
+        graph.drawGraph();
 
     }
 }
