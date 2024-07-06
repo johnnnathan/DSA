@@ -8,4 +8,7 @@ typedef struct List{
   struct Node** head;
 } List;
 
+
+void addNode(List *list, Node *node);
+void removeNode(List *list, Node)
 #endif 
