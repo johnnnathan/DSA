@@ -1,4 +1,5 @@
 #include "Node.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <assert.h> // for assert
 
@@ -7,6 +8,8 @@
 int main(int argc, char *argv[])
 {
   Node *node = malloc(sizeof(node)); 
+  setValue(node, 5);
+  printf("%d\n", getValue(node));
   return EXIT_SUCCESS;
 }
 

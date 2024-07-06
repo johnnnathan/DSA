@@ -10,5 +10,7 @@ typedef struct List{
 
 
 void addNode(List *list, Node *node);
-void removeNode(List *list, Node)
+void removeNode(List *list, Node);
+void addNode(List *list, Node *node, int index);
+
 #endif 
